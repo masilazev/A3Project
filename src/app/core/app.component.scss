@@ -3,7 +3,7 @@
     ;
 }
 
-.btn {
+.navbar .btn {
     border-radius: 20px;
     border-color: #fff;
     color: #fff;
@@ -14,3 +14,22 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.search-input {
+    background-color: #f0f0f0; /* Cinza claro */
+    border: 1px solid #ccc; /* Bordas finas */
+    color: #333; /* Texto em cinza escuro */
+  }
+
+  /* Define uma cor cinza clara para o botão de lupa */
+  .search-btn {
+    background-color: #f0f0f0; /* Mesma cor cinza claro */
+    border: 1px solid #ccc; /* Bordas finas */
+    color: #333; /* Cor do ícone */
+  }
+
+  /* Remover bordas entre input e botão para uma transição suave */
+  .search-input:focus, .search-btn:focus {
+    outline: none;
+    box-shadow: none;
+  }

@@ -41,7 +41,7 @@
               <form *ngIf="!signup" (ngSubmit)="auth()">
                 <div class="mb-3">
                   <label class="form-label">Email</label>
-                  <input type="email" [(ngModel)]="email" class="form-control"  name="email" required>
+                  <input type="email" [(ngModel)]="email" class="form-control" name="email" required>
                 </div>
                 <div class="mb-3">
                   <label class="form-label">Senha</label>
@@ -49,25 +49,28 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Entrar</button>
                 <hr />
-                <p>Não possui cadastro? <a href="#" (click)="isSignup()"> cadastre-se- aqui!</a></p>
+                <p>Não possui cadastro? <a href="#" (click)="isSignup()"> Cadastre-se aqui!</a></p>
               </form>
 
-              <form *ngIf="signup"  (ngSubmit)="register()">
+              <form *ngIf="signup" (ngSubmit)="register()">
                 <div class="mb-3">
                   <label class="form-label">Nome</label>
-                  <input type="text" class="form-control" [(ngModel)]="form.name" name="name" placeholder="Informe seu login" required>
+                  <input type="text" class="form-control" [(ngModel)]="form.name" name="name"
+                    placeholder="Informe seu login" required>
                 </div>
                 <div class="mb-3">
                   <label class="form-label">Email</label>
-                  <input type="email" class="form-control" [(ngModel)]="form.email" name="email" placeholder="Informe seu email" required>
+                  <input type="email" class="form-control" [(ngModel)]="form.email" name="email"
+                    placeholder="Informe seu email" required>
                 </div>
                 <div class="mb-3">
                   <label class="form-label">Senha</label>
-                  <input type="password" class="form-control" [(ngModel)]="form.senha" name="senha" placeholder="Informe sua senha" required>
+                  <input type="password" class="form-control" [(ngModel)]="form.senha" name="senha"
+                    placeholder="Informe sua senha" required>
                 </div>
                 <button type="submit" class="btn btn-primary">Cadastrar</button>
                 <hr />
-                <p>Possui cadastro? <a href="#" (click)="isSignup()"> realize o login aqui!</a></p>
+                <p>Possui cadastro? <a href="#" (click)="isSignup()"> Realize o login aqui!</a></p>
               </form>
             </div>
 
@@ -78,7 +81,19 @@
     </div>
   </div>
 </nav>
+
 <body>
+  <div class="container">
+    <form class="d-flex mt-4" role="search">
+      <div class="input-group">
+        <button class="btn search-btn" type="submit">
+          <i class="fas fa-search"></i> <!-- Ícone de lupa -->
+        </button>
+        <input class="form-control search-input" type="search" placeholder="Encontre um estabelecimento" aria-label="Buscar">
+      </div>
+    </form>
+  </div>
+  <h5>Barbearias Próximas</h5>
 </body>
 <footer class="footer bg-dark colorDefault">
   <div class="container-fluid">
